@@ -4,3 +4,23 @@
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency }}</span>
 </div>
+
+<form [formGroup]="checkoutForm">
+
+<button class="button" type="submit">Purchase</button>
+
+<div>
+  <label for="name">
+    Name
+  </label>
+  <input type="text" id="name" formConrolName="name">
+</div>
+
+<div>
+  <label for="address">
+    Addres
+  </label>
+  <input type="text" id="address" formConrolName="address">
+</div>
+
+</form>
